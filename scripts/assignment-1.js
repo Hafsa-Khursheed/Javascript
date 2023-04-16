@@ -23,29 +23,31 @@
 // by multiplying the selected method's price with the number of family members.
 // Finally, display the calculated fitrah amount using an alert message.
 
-var familyMembers =+prompt("Total Family Member")
+// var familyMembers =+prompt("Total Family Member")
 
-var item =prompt("Select the number " + "\n" + "1:Wheat Rs 250" +"\n"+ "2:Dates Rs 2100" +"\n"+ "3:Grain Rs 450" +"\n"+"4:Rice Rs 2000")
+// var item =prompt("Select the number " + "\n" + "1:Wheat Rs 250" +"\n"+ "2:Dates Rs 2100" +"\n"+ "3:Grain Rs 450" +"\n"+"4:Rice Rs 2000")
 
 
-if (item==1) 
-{
-   alert("Your fitra amount is" + familyMembers* 250) 
-} 
-else if(item==2)
-{
-   alert("Your fitra amount is" + familyMembers* 2100) 
+// if (item==1) 
+// {
+//    alert("Your fitra amount is" + familyMembers* 250) 
+// } 
+// else if(item==2)
+// {
+//    alert("Your fitra amount is" + familyMembers* 2100) 
  
-}
-else if(item==3)
-{  
-     alert("Your fitra amount is" + familyMembers* 450) 
-}
-else if(item==4){
-   alert("Your fitra amount is" + familyMembers* 2000) 
+// }
+// else if(item==3)
+// {  
+//      alert("Your fitra amount is" + familyMembers* 450) 
+// }
+// else if(item==4){
+//    alert("Your fitra amount is" + familyMembers* 2000) 
 
-}
-else {   alert("choose the right option")}
+// }
+// else {   alert("choose the right option")}
+
+
 //  Task 4:
 //  Create a program that asks the user to enter a name, and then prints out the name
 //  with the first letter capitalized (Make your name in capitalized case).
@@ -93,6 +95,56 @@ else {   alert("choose the right option")}
 // console.log(removedItem)
 // console.log(products)
 // console.log("Number of remainig items:" +" "+ products.length)
+
+
+// Task 7:
+//  Create a program that asks the user for their nationality, gender, and age using the prompt
+//  function. The program should then use nested if-else statements to determine if the
+//  person is eligible to vote.
+//  First, the program should check if the person is Pakistani or Indian. If they are not, the
+//  program should display a message saying they are not eligible to vote.
+//  If they are Pakistani or Indian, the program should then check their gender. If the person is
+//  male and over the age of 18, they are eligible to vote. If the person is female and over the
+//  age of 18, the program should ask if they are married. If they are married, they are eligible
+//  to vote. If they are not married, they are not eligible to vote.
+//  If the person is under 18, the program should display a message saying they are not eligible
+//  to vote.
+
+var nationality=prompt("enter your nationality")
+
+if(nationality.toLowerCase()=="pakistani" || nationality.toLowerCase()== "indian")
+{
+   var gender=prompt("enter your gender")
+   
+   if(gender.toLowerCase()=="male")
+   {
+      var age=+prompt("enter your age")
+      if(age>18){
+         alert("You are eligible to vote")
+      }
+      else{alert("You are not eligible to vote")}
+   }
+   else if(gender.toLowerCase=="female")
+   {
+      var age=+prompt("enter your age")
+     if(age>18)
+     {
+      var maritalStatus = prompt("Enter marital status married or unmarried")
+      if(maritalStatus.toLowerCase=="married")
+      {alert("You are eligible to vote")}
+      else{alert("You are not eligible to vote")}
+     }
+     else{alert("You are not eligible to vote")}
+   
+    
+   }
+   else{alert("You are not eligible to vote")}
+} 
+else{alert("You are not eligible to vote")}
+
+
+
+
 
 
 // Task 8:
