@@ -6,9 +6,18 @@
 //  using a suitable method. Then, create a variable named "result" and assign its value
 //  to the multiplication of the zakat percentage and user input. Finally, use an alert
 //  message to display the calculated zakat value. The message should look like this:
-//  "Your zakat value is xxx".
-var zakatPercentage = 0.025;
-var userInput = +prompt("Enter a Value");
+//  "Your zakat value is xxx".]
 
- var result = userInput * zakatPercentage;
- alert("Your Zakat value is " + result);
+ var zakatPercentage = 0.025;
+ var userInput = +prompt("Enter a Value");
+
+var result = userInput * zakatPercentage;
+alert("Your Zakat value is " + result);
+
+//  Task 4:
+//  Create a program that asks the user to enter a name, and then prints out the name
+//  with the first letter capitalized (Make your name in capitalized case).
+
+var studentName = prompt("Enter your name")
+var result =studentName.charAt(0).toUpperCase() + studentName.slice(1) 
+alert(result)
