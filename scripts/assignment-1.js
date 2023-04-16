@@ -8,10 +8,10 @@
 // //  message to display the calculated zakat value. The message should look like this:
 // //  "Your zakat value is xxx".]
 
-//  var zakatPercentage = 0.025;
-//  var userInput = +prompt("Enter a Value");
-// var result = userInput * zakatPercentage;
-// alert("Your Zakat value is " + result);
+ var zakatPercentage = 0.025;
+ var userInput = +prompt("Enter a Value");
+var result = userInput * zakatPercentage;
+alert("Your Zakat value is " + result);
 
 
 // // .........................Task 2............................
@@ -23,29 +23,29 @@
 // // by multiplying the selected method's price with the number of family members.
 // // Finally, display the calculated fitrah amount using an alert message.
 
-// var familyMembers =+prompt("Total Family Member")
+var familyMembers =+prompt("Total Family Member")
 
-// var item =prompt("Select the number " + "\n" + "1:Wheat Rs 250" +"\n"+ "2:Dates Rs 2100" +"\n"+ "3:Grain Rs 450" +"\n"+"4:Rice Rs 2000")
+var item =prompt("Select the number " + "\n" + "1:Wheat Rs 250" +"\n"+ "2:Dates Rs 2100" +"\n"+ "3:Grain Rs 450" +"\n"+"4:Rice Rs 2000")
 
 
-// if (item==1) 
-// {
-//    alert("Your fitra amount is" + familyMembers* 250) 
-// } 
-// else if(item==2)
-// {
-//    alert("Your fitra amount is" + familyMembers* 2100) 
+if (item==1) 
+{
+   alert("Your fitra amount is" + familyMembers* 250) 
+} 
+else if(item==2)
+{
+   alert("Your fitra amount is" + familyMembers* 2100) 
  
-// }
-// else if(item==3)
-// {  
-//      alert("Your fitra amount is" + familyMembers* 450) 
-// }
-// else if(item==4){
-//    alert("Your fitra amount is" + familyMembers* 2000) 
+}
+else if(item==3)
+{  
+     alert("Your fitra amount is" + familyMembers* 450) 
+}
+else if(item==4){
+   alert("Your fitra amount is" + familyMembers* 2000) 
 
-// }
-// else {   alert("choose the right option")}
+}
+else {   alert("choose the right option")}
 
 
 // Task 3:
@@ -74,9 +74,9 @@ else
 // //  Create a program that asks the user to enter a name, and then prints out the name
 // //  with the first letter capitalized (Make your name in capitalized case).
 
-// var studentName = prompt("Enter your name");
-// var result =studentName.charAt(0).toUpperCase() + studentName.slice(1).toLowerCase() ;
-// alert(result);
+var studentName = prompt("Enter your name");
+var result =studentName.charAt(0).toUpperCase() + studentName.slice(1).toLowerCase() ;
+alert(result);
 
 
 // // ...........................Task 5........................
@@ -89,20 +89,20 @@ else
 // //  Make sure to use descriptive variable names and comment on your code for clarity
 
 
-// var contactNumbers =[];
-// var contactNames=[];
-// for (let i = 0; i < 3; i++)
-//  {
-//     // const element = array[i];
-//    contactNumbers.push(prompt("Enter Contact Number"))
-//    contactNames.push(prompt("Enter Name"))
+var contactNumbers =[];
+var contactNames=[];
+for (let i = 0; i < 3; i++)
+ {
+    // const element = array[i];
+   contactNumbers.push(prompt("Enter Contact Number"))
+   contactNames.push(prompt("Enter Name"))
  
-// }
-// for (let i = 0; i < 3; i++) {
+}
+for (let i = 0; i < 3; i++) {
 
-//   console.log(contactNames[i] + ":" + contactNumbers[i] )
+  console.log(contactNames[i] + ":" + contactNumbers[i] )
    
-// }
+}
 
 
 // // ..................Task 6...................
@@ -111,12 +111,12 @@ else
 // // from your array and console the removed item, Also display the remaining items in the
 // // array and total number of items remaining.
      
-// var products=["Mango","Banana","Apple","Grapes","Oranges","Strawberry","Cherry"]
-// var userInput=+prompt("Select and enter position of item "+"   "+ products)
-// var removedItem=products.splice(userInput-1,1)
-// console.log(removedItem)
-// console.log(products)
-// console.log("Number of remainig items:" +" "+ products.length)
+var products=["Mango","Banana","Apple","Grapes","Oranges","Strawberry","Cherry"]
+var userInput=+prompt("Select and enter position of item "+"   "+ products)
+var removedItem=products.splice(userInput-1,1)
+console.log(removedItem)
+console.log(products)
+console.log("Number of remainig items:" +" "+ products.length)
 
 
 // // ..................Task 7...................
@@ -132,37 +132,37 @@ else
 // //  If the person is under 18, the program should display a message saying they are not eligible
 // //  to vote.
 
-// var nationality=prompt("enter your nationality")
+var nationality=prompt("enter your nationality")
 
-// if(nationality.toLowerCase()=="pakistani" || nationality.toLowerCase()== "indian")
-// {
-//    var gender=prompt("enter your gender")
+if(nationality.toLowerCase()=="pakistani" || nationality.toLowerCase()== "indian")
+{
+   var gender=prompt("enter your gender")
    
-//    if(gender.toLowerCase()=="male")
-//    {
-//       var age=+prompt("enter your age")
-//       if(age>18){
-//          alert("You are eligible to vote")
-//       }
-//       else{alert("You are not eligible to vote")}
-//    }
-//    else if(gender.toLowerCase=="female")
-//    {
-//       var age=+prompt("enter your age")
-//      if(age>18)
-//      {
-//       var maritalStatus = prompt("Enter marital status married or unmarried")
-//       if(maritalStatus.toLowerCase=="married")
-//       {alert("You are eligible to vote")}
-//       else{alert("You are not eligible to vote")}
-//      }
-//      else{alert("You are not eligible to vote")}
+   if(gender.toLowerCase()=="male")
+   {
+      var age=+prompt("enter your age")
+      if(age>18){
+         alert("You are eligible to vote")
+      }
+      else{alert("You are not eligible to vote")}
+   }
+   else if(gender.toLowerCase=="female")
+   {
+      var age=+prompt("enter your age")
+     if(age>18)
+     {
+      var maritalStatus = prompt("Enter marital status married or unmarried")
+      if(maritalStatus.toLowerCase=="married")
+      {alert("You are eligible to vote")}
+      else{alert("You are not eligible to vote")}
+     }
+     else{alert("You are not eligible to vote")}
    
     
-//    }
-//    else{alert("You are not eligible to vote")}
-// } 
-// else{alert("You are not eligible to vote")}
+   }
+   else{alert("You are not eligible to vote")}
+} 
+else{alert("You are not eligible to vote")}
 
 
 // //........................... Task 8..............................
@@ -173,7 +173,7 @@ else
 // // (Hint : Make sure it should not disturb the array that contains 15 players instead you have
 // // to make acopy of this array)
 
-//  var WorldCupSquad = ["Babar", "Shadab", "Naseem", "Haris","Iftikhar", "Fakhar", "Shan", "Shaheen","Rizwan","Faheem","Imam","Nawaz","Imad","Hasnain","Khushdil"];
-//  var FinalPlayers = WorldCupSquad.slice(0,11)
-//  console.log(WorldCupSquad)
-//  console.log(FinalPlayers)
+ var WorldCupSquad = ["Babar", "Shadab", "Naseem", "Haris","Iftikhar", "Fakhar", "Shan", "Shaheen","Rizwan","Faheem","Imam","Nawaz","Imad","Hasnain","Khushdil"];
+ var FinalPlayers = WorldCupSquad.slice(0,11)
+ console.log(WorldCupSquad)
+ console.log(FinalPlayers)
